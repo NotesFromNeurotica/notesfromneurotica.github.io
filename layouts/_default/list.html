@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div>
+  {{ .Content }}
+  <div class="col">
+    {{ range .Pages }}
+      {{ partial "post_card.html" . }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}
